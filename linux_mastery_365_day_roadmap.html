@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101827">
+<title>Linux Mastery — 365-Day Practical Roadmap</title>
+<style>
+:root{--bg:#0b1120;--panel:#121c2e;--panel2:#17243a;--text:#edf3ff;--muted:#a8b6cc;--accent:#76e4b5;--accent2:#7cb8ff;--border:#2a3a53;--warn:#ffd479}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(180deg,#0b1120,#0d1626 45%,#0b1120);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+a{color:var(--accent2)}a:hover{color:var(--accent)}header{padding:36px 18px 28px;background:radial-gradient(ellipse at top right,#203958 0,transparent 55%);border-bottom:1px solid var(--border)}
+.wrap{max-width:1100px;margin:auto;padding:0 16px}.eyebrow{color:var(--accent);font-weight:800;letter-spacing:.13em;text-transform:uppercase;font-size:.78rem}
+h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.05;margin:.5rem 0 1rem}h2{margin-top:0}p{color:var(--muted)}.hero p{max-width:760px;font-size:1.08rem}
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.pill{border:1px solid var(--border);background:#111c2d;padding:8px 12px;border-radius:999px;font-size:.9rem}
+main{padding:24px 0 60px}.layout{display:grid;grid-template-columns:280px minmax(0,1fr);gap:20px;align-items:start}
+aside,.card,.day-card{background:var(--panel);border:1px solid var(--border);border-radius:16px}
+aside{padding:18px;position:sticky;top:12px}aside h2{font-size:1.05rem}label{display:block;color:var(--muted);font-size:.9rem;margin:10px 0 5px}
+input[type=search],select{width:100%;padding:11px 12px;border-radius:10px;border:1px solid var(--border);background:#0b1423;color:var(--text);font:inherit}
+.progress-line{height:9px;border-radius:99px;background:#26354b;overflow:hidden;margin:10px 0}.progress-line span{display:block;height:100%;width:0;background:var(--accent);transition:width .2s}
+button{cursor:pointer;border:1px solid var(--border);border-radius:10px;padding:9px 12px;background:var(--panel2);color:var(--text);font:inherit}button:hover{border-color:var(--accent)}.small{font-size:.85rem;color:var(--muted)}
+.content{min-width:0}.intro{padding:20px;margin-bottom:18px}.callout{border-left:3px solid var(--warn);padding:10px 14px;background:#251f17;border-radius:0 10px 10px 0;color:#ffe7b0}
+.week{margin:22px 0}.week h2{font-size:1.25rem;margin-bottom:4px}.week-desc{margin-top:0}
+.day-card{padding:17px;margin:12px 0;scroll-margin-top:20px}.day-top{display:flex;gap:12px;align-items:flex-start}.check{width:22px;height:22px;accent-color:var(--accent);flex:0 0 auto;margin-top:4px}.day-title{font-size:1.07rem;font-weight:750;margin:0}.day-meta{font-size:.8rem;color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:.06em}.day-card p{margin:8px 0}
+.day-card h4{margin:14px 0 5px;font-size:.91rem;color:#d9e6ff}.tasklist{padding-left:20px;margin:4px 0;color:var(--muted)}.tasklist li{margin:3px 0}
+pre{overflow:auto;background:#080e18;border:1px solid #26364d;border-radius:10px;padding:12px;color:#c7f7df;font-size:.9rem;white-space:pre-wrap;word-break:break-word}code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+.links{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.links a{display:inline-block;text-decoration:none;border:1px solid #355174;border-radius:9px;padding:7px 10px;font-size:.9rem}.links a:hover{border-color:var(--accent)}
+.hidden{display:none!important}.section-title{margin:28px 0 12px}.resource-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.resource{padding:15px;background:var(--panel);border:1px solid var(--border);border-radius:12px}.resource h3{font-size:1rem;margin:0 0 5px}.resource p{font-size:.9rem;margin:5px 0 10px}
+footer{border-top:1px solid var(--border);padding:24px 0;color:var(--muted)}.footer-note{font-size:.88rem}
+@media(max-width:780px){.layout{grid-template-columns:1fr}aside{position:static}.day-card{padding:14px}.stats .pill{font-size:.82rem}}
+@media print{body{background:white;color:#111}.day-card,aside,.card,.resource{background:white;color:#111;border:1px solid #ccc}p,.small,.tasklist{color:#333}header{background:white;color:#111}.links a{color:#0645ad}aside{position:static}}
+</style>
+</head>
+<body>
+<header><div class="wrap hero">
+<div class="eyebrow">Free • Practical • Beginner to Advanced</div>
+<h1>Linux Mastery<br>365-Day Roadmap</h1>
+<p>A day-by-day learning website for Linux command line, system administration, networking, Bash automation, servers, troubleshooting, and cybersecurity foundations. Learn a concept, practise it, and record what you can do without copying.</p>
+<div class="stats"><span class="pill">📅 365 daily lessons</span><span class="pill">🧪 Hands-on tasks</span><span class="pill">🔗 Free learning links</span><span class="pill">💾 Progress saved in this browser</span></div>
+</div><nav style="display:flex;gap:9px;flex-wrap:wrap;margin:18px 0"><a href="tech_mastery_hub.html" style="background:#131b2e;border:1px solid #293653;border-radius:10px;padding:10px 13px;color:#edf2ff;text-decoration:none;font-weight:750">🏠 All Roadmaps</a><a href="linux_mastery_365_day_roadmap.html" style="background:#131b2e;border:1px solid #293653;border-radius:10px;padding:10px 13px;color:#edf2ff;text-decoration:none;font-weight:750">🐧 Linux</a><a href="networking_mastery_365_day_roadmap.html" style="background:#131b2e;border:1px solid #293653;border-radius:10px;padding:10px 13px;color:#edf2ff;text-decoration:none;font-weight:750">🌐 Networking</a><a href="cybersecurity_mastery_365_day_roadmap.html" style="background:#131b2e;border:1px solid #293653;border-radius:10px;padding:10px 13px;color:#edf2ff;text-decoration:none;font-weight:750">🛡️ Cybersecurity</a></nav></header>
+<main class="wrap">
+<div class="layout">
+<aside>
+<h2>Your learning dashboard</h2>
+<div id="progressText">0 of 365 days completed</div><div class="progress-line"><span id="progressBar"></span></div>
+<p class="small">Tick a day after completing its practical task. Your progress is saved on this device/browser.</p>
+<label for="search">Search lessons</label><input id="search" type="search" placeholder="e.g. permissions, DNS, grep">
+<label for="phaseFilter">Filter by phase</label><select id="phaseFilter"><option value="all">All 12 phases</option></select>
+<label for="statusFilter">Completion</label><select id="statusFilter"><option value="all">All days</option><option value="todo">Not completed</option><option value="done">Completed</option></select>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px"><button id="expandBtn">Expand all</button><button id="collapseBtn">Collapse all</button><button id="resetBtn" title="Clears locally saved checkmarks">Reset progress</button></div>
+<p class="small">Suggested pace: 60–120 minutes a day. Take extra time when a topic is difficult.</p>
+</aside>
+<div class="content">
+<section class="card intro">
+<h2>How to use this roadmap</h2>
+<ol class="tasklist">
+<li>Read the topic and open the learning link.</li>
+<li>Run commands in a Linux terminal or browser lab. A restricted simulator may not support every command.</li>
+<li>Complete the task without copying a solution.</li>
+<li>Tick the checkbox only when you can explain what you did.</li>
+<li>Keep a notes file with the command, its purpose, an example, and what happened.</li>
+</ol>
+<div class="callout"><strong>Safety:</strong> Practise destructive commands, permission changes, firewall rules, and service changes only in your own test environment. Never run a command with <code>sudo</code> unless you understand its effect. Don't expose a test server to the public internet without learning how to secure it.</div>
+</section>
+<section class="section-title"><h2>Core free resources</h2></section>
+<div class="resource-grid">
+<div class="resource"><h3><a href="https://linuxjourney.com/" target="_blank" rel="noopener">Linux Journey</a></h3><p>Structured explanations of Linux basics, command line, processes, permissions, and networking.</p></div>
+<div class="resource"><h3><a href="https://overthewire.org/wargames/bandit/" target="_blank" rel="noopener">OverTheWire: Bandit</a></h3><p>Beginner-friendly command-line challenges. Start at Level 0 and progress gradually.</p></div>
+<div class="resource"><h3><a href="https://www.gnu.org/software/bash/manual/" target="_blank" rel="noopener">GNU Bash Manual</a></h3><p>Reference for shell syntax, variables, conditions, loops, functions, and scripts.</p></div>
+<div class="resource"><h3><a href="https://man7.org/linux/man-pages/" target="_blank" rel="noopener">Linux man-pages</a></h3><p>Reference documentation for Linux commands, system calls, and library functions.</p></div>
+<div class="resource"><h3><a href="https://help.ubuntu.com/" target="_blank" rel="noopener">Ubuntu Documentation</a></h3><p>Guidance for using and administering Ubuntu systems.</p></div>
+<div class="resource"><h3><a href="https://shelltrainer.com/" target="_blank" rel="noopener">Shell Trainer</a></h3><p>Interactive shell practice. Availability and features can change.</p></div>
+</div>
+<div id="roadmap"></div>
+</div></div></main>
+<footer><div class="wrap footer-note">This roadmap is a study plan, not a certification or guarantee of expertise. Some linked services may change their free offerings. For real administration, use a Linux machine or lab that supports the required commands; browser terminals can be restricted.</div></footer>
+<script>
+const phases = [
+{ name:"Phase 1 — Linux foundations", weeks:4, desc:"Build confidence with the operating system, terminal, paths, files, and command help.", resource:"https://linuxjourney.com/", focus:"basics" },
+{ name:"Phase 2 — Files and text tools", weeks:4, desc:"Learn to search, filter, redirect, archive, and process text efficiently.", resource:"https://overthewire.org/wargames/bandit/", focus:"files" },
+{ name:"Phase 3 — Users, permissions and processes", weeks:4, desc:"Understand access control, running programs, system resources, and software management.", resource:"https://linuxjourney.com/", focus:"admin" },
+{ name:"Phase 4 — Linux networking", weeks:4, desc:"Explore interfaces, addressing, DNS, routing, ports, SSH, and troubleshooting.", resource:"https://linuxjourney.com/", focus:"network" },
+{ name:"Phase 5 — Bash scripting", weeks:4, desc:"Turn commands into reliable scripts with variables, conditions, loops, and error handling.", resource:"https://www.gnu.org/software/bash/manual/", focus:"bash" },
+{ name:"Phase 6 — Servers and services", weeks:4, desc:"Learn services, web-server basics, logs, remote administration, and safe configuration.", resource:"https://help.ubuntu.com/", focus:"server" },
+{ name:"Phase 7 — Storage and system internals", weeks:4, desc:"Understand filesystems, mounts, boot, memory, process behaviour, and system calls at an introductory level.", resource:"https://man7.org/linux/man-pages/", focus:"internals" },
+{ name:"Phase 8 — Troubleshooting and performance", weeks:4, desc:"Develop a repeatable method to gather evidence and diagnose common system problems.", resource:"https://man7.org/linux/man-pages/", focus:"trouble" },
+{ name:"Phase 9 — Linux security", weeks:4, desc:"Apply least privilege, secure remote access, patching, log review, and baseline hardening.", resource:"https://help.ubuntu.com/", focus:"security" },
+{ name:"Phase 10 — Advanced networking and labs", weeks:4, desc:"Practise packet-path reasoning, name resolution, sockets, firewall concepts, and controlled lab diagnosis.", resource:"https://linuxjourney.com/", focus:"network" },
+{ name:"Phase 11 — Automation and operations", weeks:4, desc:"Build reusable scripts, backups, scheduled jobs, monitoring checks, and clear documentation.", resource:"https://www.gnu.org/software/bash/manual/", focus:"bash" },
+{ name:"Phase 12 — Capstone and specialisation", weeks:4, desc:"Combine administration, networking, scripting, and security in documented projects.", resource:"https://overthewire.org/wargames/bandit/", focus:"project" }
+];
+const dayPatterns = [
+{title:"Learn the core concept",verb:"Read the lesson and explain the idea in your own words.",cmd:"man COMMAND",ex:"Replace COMMAND with a command you are studying. The manual describes its purpose, options, and usage.",linkLabel:"Open learning resource"},
+{title:"Explore commands and help",verb:"Try the topic's commands with help options and compare their outputs.",cmd:"COMMAND --help",ex:"Many programs show a quick list of options. Some commands use a manual page instead.",linkLabel:"Read the reference"},
+{title:"Guided practice",verb:"Repeat examples in a dedicated practice folder; change one detail at a time.",cmd:"pwd\nls -la",ex:"pwd prints the current directory. ls -la lists files, including hidden files, with details.",linkLabel:"Study the concept"},
+{title:"Independent challenge",verb:"Complete a small task without copying the example. Write down any error and how you fixed it.",cmd:"history",ex:"Shows commands recorded in the current shell history; availability depends on the shell and session.",linkLabel:"Open the lesson"},
+{title:"Troubleshooting drill",verb:"Intentionally make a harmless mistake, read the error, and diagnose the cause.",cmd:"echo $?",ex:"Prints the exit status of the most recently completed command; 0 usually means success.",linkLabel:"Use the reference"},
+{title:"Mini-project",verb:"Create a small deliverable: a script, a directory structure, a checklist, or a written diagnosis.",cmd:"printf '%s\\n' 'Practice note' >> learning-log.txt",ex:"printf formats text. >> appends output to a file rather than replacing its contents.",linkLabel:"Learn more"},
+{title:"Review and self-test",verb:"Explain the week's key ideas from memory, then redo one exercise from scratch.",cmd:"type COMMAND",ex:"In Bash, type can explain whether a name is an alias, shell builtin, function, or executable.",linkLabel:"Review the resource"}
+];
+const weeklyThemes = [
+["What Linux is","Kernel vs distribution","Terminal, shell and Bash","Command structure","Getting help","First command practice","Week 1 review"],
+["Paths and directories","Root and home directories","Absolute vs relative paths","Hidden files and listings","Moving around efficiently","Filesystem navigation challenge","Week 2 review"],
+["Create files and folders","Copy and rename","Remove files safely","Read text files","Head, tail and line counts","Build a practice tree","Week 3 review"],
+["Globbing and wildcards","Environment variables","Aliases and command history","Quoting and escaping","Standard input/output","Pipes and redirection","Foundations assessment"],
+["Search with grep","Find files with find","Sort and uniq","Cut and tr","sed basics","awk basics","Text processing challenge"],
+["Archives with tar","Compression with gzip","File metadata and stat","Links: symbolic and hard","Checksums and file integrity","Archive a project folder","Files review"],
+["Permissions: read/write/execute","Symbolic chmod","Numeric chmod","Ownership and groups","sudo and least privilege","Permission lab","Access-control assessment"],
+["Users and groups concepts","Inspect users and groups","User database files","Processes and PIDs","ps and top","Signals and safe process control","Process review"],
+["CPU, memory and uptime","Disk capacity with df","Directory size with du","Packages and repositories","Package inventory","Services and systemd","Administration assessment"],
+["IP addresses and interfaces","Routes and default gateway","DNS resolution","Ports and sockets","TCP vs UDP","ping, curl and diagnostics","Networking review"],
+["SSH concepts and safe access","SSH keys conceptually","Remote file transfer","DNS vs connectivity diagnosis","Firewall concepts","Network troubleshooting lab","Networking assessment"],
+["Bash script anatomy","Variables and quoting","Read user input","Exit codes","if/else conditions","Write a small conditional script","Scripting review"],
+["Loops: for and while","Functions","Arguments and parameters","Arrays and strings","Pipelines in scripts","Write a log-summary script","Scripting assessment"],
+["Error handling and set options","Temporary files safely","Scheduling with cron","Script permissions","Debugging with bash -x","Automate a safe task","Automation review"],
+["Services and daemons","Inspect service status","Read journal logs","Boot and startup overview","Web-server concepts","HTTP request basics","Service review"],
+["Web server in a lab","Server logs","SSH administration practices","Backups and restore concepts","Environment configuration","Document a service","Server assessment"],
+["Partitions and filesystems","Mounts and unmounts concepts","Inodes and metadata","Hard links vs symlinks","Disk usage investigation","Archive and verify backups","Storage review"],
+["Linux boot stages","Kernel and user space","Processes and signals deeper","Memory and swap concepts","System calls overview","Read a manual page carefully","Internals review"],
+["Logs and evidence collection","Troubleshoot permission errors","Investigate a failed service","Diagnose a full disk","Investigate high CPU","Write a troubleshooting runbook","Troubleshooting assessment"],
+["Security updates and patching","Least privilege review","SSH hardening concepts","File permissions audit","Log review basics","Security checklist for a lab","Security review"],
+["Firewall rules concepts","Listening services inventory","DNS troubleshooting deeper","Route and socket diagnosis","Packet capture concepts","Network lab investigation","Networking assessment"],
+["Reliable Bash patterns","Logging from scripts","Input validation","Backups with verification","Scheduled checks","Build a health-check script","Automation review"],
+["Capstone planning","Build the lab directory structure","System inventory script","Permissions and users checklist","Networking report","Service and log investigation","Capstone review"],
+["Capstone: troubleshooting scenario","Capstone: backup and recovery plan","Capstone: security baseline","Capstone: automation improvements","Document commands and findings","Repeat weak topics","Final assessment"]
+];
+const commandsByFocus = {
+basics:[["pwd","Prints the current working directory."],["ls -la","Lists files, including hidden files, with detailed metadata."],["cd /tmp","Changes the current directory to /tmp."],["whoami","Prints the effective username."],["uname -a","Shows kernel and system information."]],
+files:[["touch notes.txt","Creates an empty file, or updates its timestamp if it exists."],["cp source dest","Copies a file or directory (directory copies often need -r)."],["mv old new","Moves or renames a file or directory."],["grep 'word' file","Prints lines matching a text pattern."],["find . -type f","Finds regular files under the current directory."],["sort file | uniq -c","Sorts lines and counts adjacent duplicate lines."],["wc -l file","Counts lines in a file."],["tar -czf archive.tar.gz folder/","Creates a gzip-compressed tar archive."]],
+admin:[["id","Shows user and group IDs."],["ls -l","Shows file permissions, owner, group, size and timestamp."],["chmod 600 file","Gives owner read/write access and removes group/other permissions."],["ps aux","Lists processes in a common BSD-style format."],["top","Displays a live process/resource view, if installed."],["df -h","Shows filesystem space in human-readable units."],["du -sh folder","Shows a summary of a folder's disk usage."],["systemctl status NAME","Shows service status on systems using systemd; may need privileges."]],
+network:[["ip addr","Shows network interfaces and assigned addresses."],["ip route","Shows the routing table and default route."],["getent hosts example.com","Requests name resolution through the system's configured name-service path."],["ss -lnt","Lists listening TCP sockets with numeric ports."],["ping -c 4 example.com","Sends four ICMP echo requests if ping and network access are allowed."],["curl -I https://example.com","Requests HTTP response headers; needs network access."],["ssh user@host","Starts an SSH connection to a host; only use systems you are authorised to access."]],
+bash:[["bash script.sh","Runs a Bash script."],["echo \"$HOME\"","Prints the HOME environment variable."],["if [ -f file ]; then ...; fi","Runs a block when a regular file exists."],["for f in *.txt; do echo \"$f\"; done","Loops through matching text filenames."],["grep -n 'error' app.log","Shows matching lines and their line numbers."],["bash -n script.sh","Checks Bash syntax without executing the script."],["bash -x script.sh","Runs a script with a trace of commands; review before running unfamiliar scripts."]],
+server:[["systemctl status NAME","Checks the status of a systemd service."],["journalctl -u NAME","Shows logs associated with a service on systemd systems."],["ss -lntup","Lists listening sockets; some process details may require privileges."],["curl -I http://localhost","Checks HTTP response headers from a local web service if one is running."],["scp file user@host:/path/","Copies a file over SSH to an authorised remote host."],["df -h","Checks free space on mounted filesystems."]],
+internals:[["stat file","Shows detailed file metadata."],["ls -li","Lists files with inode numbers."],["mount","Displays mounted filesystems."],["free -h","Shows memory and swap usage if the command is available."],["uname -r","Prints the kernel release."],["man 2 open","Opens the manual for a system call when its man pages are installed."]],
+trouble:[["journalctl -p err -b","Shows error-priority journal entries from the current boot on systemd systems."],["df -h","Checks filesystem capacity."],["du -xhd1 /path","Summarises directory sizes one level deep on systems whose du supports these options."],["ps aux","Lists processes to help investigate resource usage."],["ss -lntp","Shows listening TCP sockets and process info when permitted."],["echo $?","Displays the previous command's exit status."]],
+security:[["id","Checks current user and group identities."],["sudo -l","Shows allowed sudo commands when sudo is configured."],["find . -type f -perm -o+w","Finds world-writable regular files under the current directory on GNU find."],["ss -lnt","Reviews listening TCP sockets."],["sha256sum file","Computes a SHA-256 checksum on systems with this utility."],["last","Shows login history when records and permissions allow."]],
+project:[["uname -a","Records basic system/kernel details."],["id && pwd && df -h","Collects user identity, current directory, and filesystem capacity."],["bash -n script.sh","Checks script syntax."],["tar -czf backup.tar.gz project/","Creates a compressed archive of a project folder."],["sha256sum backup.tar.gz","Computes a checksum to help verify archive integrity."]]
+};
+function resourceFor(focus, day, week) {
+ if(focus==="bash") return {url:"https://www.gnu.org/software/bash/manual/",label:"Bash manual"};
+ if(focus==="files" && day%7===5) return {url:"https://overthewire.org/wargames/bandit/",label:"Bandit practice"};
+ if(focus==="internals"||focus==="trouble") return {url:"https://man7.org/linux/man-pages/",label:"Linux manual pages"};
+ if(focus==="server"||focus==="security") return {url:"https://help.ubuntu.com/",label:"Ubuntu documentation"};
+ if(day%7===6 || day%7===0) return {url:"https://overthewire.org/wargames/bandit/",label:"Command-line challenge"};
+ if(focus==="network") return {url:"https://linuxjourney.com/",label:"Linux Journey"};
+ if(focus==="admin") return {url:"https://linuxjourney.com/",label:"Linux Journey"};
+ return {url:"https://linuxjourney.com/",label:"Linux Journey"};
+}
+function phaseForDay(day){const idx=Math.min(11,Math.floor((day-1)/30.42));return phases[idx];}
+function weekTopic(day){const week=Math.floor((day-1)/7);let p=Math.min(11,Math.floor(week/4));let localWeek=week%4;let theme=weeklyThemes[p*4+localWeek]||weeklyThemes[weeklyThemes.length-1];return {p,localWeek,theme,week:week+1};}
+function commandsFor(focus, day){const arr=commandsByFocus[focus]||commandsByFocus.basics;return arr[(day*3+Math.floor(day/7))%arr.length];}
+const roadmap=document.getElementById("roadmap");
+const phaseSelect=document.getElementById("phaseFilter");
+phases.forEach((p,i)=>{const o=document.createElement("option");o.value=String(i);o.textContent=p.name;phaseSelect.appendChild(o);});
+let htmlOut="";
+for(let day=1;day<=365;day++){
+ const ph=phaseForDay(day), wt=weekTopic(day), pattern=dayPatterns[(day-1)%7], topic=wt.theme[(day-1)%7]||pattern.title;
+ const command=commandsFor(ph.focus,day), res=resourceFor(ph.focus,day,wt.week);
+ const tasks=[
+  `Learn: ${topic.toLowerCase()} and write a short explanation in your own words.`,
+  `Practise: ${pattern.verb}`,
+  `Record: one thing that worked, one error or question, and how you investigated it.`
+ ];
+ if(day%7===0) tasks.push("Weekly checkpoint: redo one earlier exercise without notes and explain each step.");
+ const safeId="day-"+day;
+ htmlOut+=`<article class="day-card" data-day="${day}" data-phase="${phases.indexOf(ph)}" data-search="${(ph.name+" "+topic+" "+command[0]+" "+command[1]).toLowerCase()}">
+ <div class="day-top"><input class="check" type="checkbox" id="check-${day}" data-check="${day}" aria-label="Mark day ${day} complete"><div style="flex:1"><div class="day-meta">Day ${day} of 365 · ${ph.name}</div><h3 class="day-title">${topic}</h3></div><button class="toggle" aria-expanded="true" aria-controls="${safeId}">Hide</button></div>
+ <div id="${safeId}" class="day-body"><p>${ph.desc}</p>
+ <h4>What to learn and do</h4><ul class="tasklist">${tasks.map(t=>`<li>${t}</li>`).join("")}</ul>
+ <h4>Command to understand today</h4><pre><code>${command[0].replace(/</g,"&lt;").replace(/>/g,"&gt;")}</code></pre><p><strong>Brief explanation:</strong> ${command[1]}</p>
+ <p><strong>Today's practice:</strong> ${pattern.verb} If this command is unavailable in your browser terminal, read its manual and practise in a suitable Linux environment later.</p>
+ <div class="links"><a href="${res.url}" target="_blank" rel="noopener">${res.label} ↗</a><a href="https://man7.org/linux/man-pages/man1/" target="_blank" rel="noopener">Command manual reference ↗</a></div>
+ </div></article>`;
+}
+roadmap.innerHTML=htmlOut;
+const checks=[...document.querySelectorAll("[data-check]")];
+const storageKey="linuxMastery365Progress";
+function readSaved(){try{return JSON.parse(localStorage.getItem(storageKey)||"{}")}catch(e){return {}}}
+function updateProgress(){const saved=readSaved();let done=0;checks.forEach(c=>{c.checked=!!saved[c.dataset.check];if(c.checked)done++;});document.getElementById("progressText").textContent=`${done} of 365 days completed (${Math.round(done/365*100)}%)`;document.getElementById("progressBar").style.width=(done/365*100)+"%";}
+checks.forEach(c=>c.addEventListener("change",()=>{const saved=readSaved();saved[c.dataset.check]=c.checked;localStorage.setItem(storageKey,JSON.stringify(saved));updateProgress();applyFilters();}));
+document.querySelectorAll(".toggle").forEach(btn=>btn.addEventListener("click",()=>{const body=document.getElementById(btn.getAttribute("aria-controls"));const hide=!body.classList.contains("hidden");body.classList.toggle("hidden",hide);btn.textContent=hide?"Show":"Hide";btn.setAttribute("aria-expanded",String(!hide));}));
+document.getElementById("expandBtn").addEventListener("click",()=>document.querySelectorAll(".day-body").forEach(b=>{b.classList.remove("hidden");const btn=document.querySelector(`[aria-controls="${b.id}"]`);if(btn){btn.textContent="Hide";btn.setAttribute("aria-expanded","true");}}));
+document.getElementById("collapseBtn").addEventListener("click",()=>document.querySelectorAll(".day-body").forEach(b=>{b.classList.add("hidden");const btn=document.querySelector(`[aria-controls="${b.id}"]`);if(btn){btn.textContent="Show";btn.setAttribute("aria-expanded","false");}}));
+function applyFilters(){const q=document.getElementById("search").value.toLowerCase().trim(), phase=document.getElementById("phaseFilter").value, status=document.getElementById("statusFilter").value;document.querySelectorAll(".day-card").forEach(card=>{const check=card.querySelector(".check");const matchQ=!q||card.dataset.search.includes(q);const matchP=phase==="all"||card.dataset.phase===phase;const matchS=status==="all"||(status==="done"&&check.checked)||(status==="todo"&&!check.checked);card.classList.toggle("hidden",!(matchQ&&matchP&&matchS));});document.querySelectorAll(".week").forEach(w=>{const visible=[...w.querySelectorAll(".day-card")].some(c=>!c.classList.contains("hidden"));w.classList.toggle("hidden",!visible);});}
+["search","phaseFilter","statusFilter"].forEach(id=>document.getElementById(id).addEventListener(id==="search"?"input":"change",applyFilters));
+document.getElementById("resetBtn").addEventListener("click",()=>{if(confirm("Clear all saved progress for this roadmap on this browser?")){localStorage.removeItem(storageKey);updateProgress();applyFilters();}});
+updateProgress();
+</script>
+</body></html>
